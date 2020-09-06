@@ -11,18 +11,19 @@ import java.io.Serializable;
 public class Employee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
-
+    @Column(name = "first_name")
     private String first_name;
-
-    private String last_genre;
-
+    @Column(name = "last_name")
+    private String last_name;
+    @Column(name = "email")
     private String email;
-
+    @Column(name = "password")
     private String password;
     @Transient
     private String confirm_password;
-
+    @Column(name = "salary")
     private int salary;
 
 }
