@@ -1,0 +1,7 @@
+<form th:action="@{/empInsert}" th:object="${emp}" method="post">
+    First Name: <input type="text" name="first_name">
+    Last Name: <input type="text" name="last_name">
+    Email: <input type="text" name="email">
+    Salary: <input type="text" name="salary">
+    <button type="submit">INSERT</button>
+</form>
